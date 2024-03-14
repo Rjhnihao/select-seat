@@ -45,6 +45,10 @@ nohup python3 test.py &
 ```shell
 cat nohup.out
 ```
+## 终止当前目录下所有进程:
+```shell
+lsof +D $(pwd) | awk 'NR>1 {print $2}' | sort -u | xargs kill
+```
 
 
 # 自动预约图书馆的项目
