@@ -111,7 +111,7 @@ def login_and_select_date(username, password):
 
 def job():
     print("开始选座:", datetime.now())
-    login_and_select_date("264747121981sfda1", "RJawdfgersa")
+    login_and_select_date("21071411", "RJH21071411")
 
 def run_scheduled_job():
     schedule.every().day.at("20:00").do(job)
