@@ -35,6 +35,7 @@ google-chrome --version
 给ChromeDriver添加权限:
 ```shell
 chmod +x chromedriver
+chmod +x Makefile
 ```
 # 开始运行:
 ```shell
