@@ -74,8 +74,8 @@ def select(cookie,seat):
                 print("uid参数获取失败！")
             now = datetime.now()
             start_time_of_the_day = datetime(now.year, now.month, now.day)
-            target_start_time = start_time_of_the_day + timedelta(days=1, hours=-1) #-1+8=7(7点) day=1,表明是明天
-            duration = 3600
+            target_start_time = start_time_of_the_day + timedelta(days=2, hours=1) #1+8=9(9点) day=2,表明是后天
+            duration = 13 *3600  #13为预约了13个小时
             begintime = int((target_start_time - datetime(1970, 1, 1)).total_seconds())
 
             data = {
@@ -107,11 +107,10 @@ def comfirm(username, password,seat):
     else:
         print("登录失败!!!!!!!")
 
-
 def job():
     print("开始选座:", datetime.now())
-    #comfirm("dasfsd","dsadv","das") #输入账号，密码，座位
-    comfirm("dasewfsd","dwfdgfsd","sdsaz") #输入账号，密码，座位
+    #comfirm("sghjgfd","dasdfhgf","10343") #输入账号，密码，座位 (10343)为二楼343的位置
+    comfirm("dasfdgfhj","wesdgtfh","wdesfdg") #输入账号，密码，座位
 
 def run_scheduled_job():
     print("开始运行。")
