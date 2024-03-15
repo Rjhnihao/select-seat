@@ -39,7 +39,7 @@ chmod +x Makefile
 ```
 # 开始运行:
 ```shell
-nohup python3 test.py &
+make start
 ```
 这条命令会使得test.py在后台运行，nohup会将输出重定向到一个名为nohup.out的文件中。
 ## 查看nohup.out文件
@@ -48,8 +48,7 @@ cat nohup.out
 ```
 ## 终止当前目录下所有进程:
 ```shell
-lsof +D $(pwd) | awk 'NR>1 {print $2}' | sort -u | xargs kill
+make stop
 ```
-
 
 # 自动预约图书馆的项目
