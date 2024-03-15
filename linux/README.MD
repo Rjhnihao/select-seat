@@ -1,6 +1,6 @@
 # 下载项目
 ```shell
-git clone 
+git clone https://github.com/Rjhnihao/select-seat.git
 ```
 # 安装指南：
 ## python需匹配的环境：
@@ -15,7 +15,6 @@ pip3 install selenium==3.141.0
 pip3 install schedule
 pip3 install datetime
 ```
-
 
 ## 安装google:
 现已提供ChromeDriver的版本:122.0.6261.128
