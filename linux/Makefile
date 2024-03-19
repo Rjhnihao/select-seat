@@ -1,7 +1,19 @@
 PWD=$(shell pwd)
 
-start:
-	nohup python3 test.py > test.out 2>&1 &
-stop:
-	pkill -f test.py
+.PHONY: start start1 start2 stop stop1 stop2
 
+start: start1 start2
+
+start1:
+	@nohup python3 R.py > R.out 2>&1 &
+
+start2:
+	@nohup python3 test.py > test.out 2>&1 &
+
+stop: stop1 stop2
+
+stop1:
+	@pkill -f R.py
+
+stop2:
+	@pkill -f test.py
