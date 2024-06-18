@@ -59,7 +59,8 @@ def login(username,password):
         except Exception as e:
             print(f"用户{username}登录失败，尝试次数 {attempt + 1}: {e}")
         finally:
-            driver.quit()
+            if driver:
+                driver.quit()
 
     return None
 
@@ -110,7 +111,7 @@ def comfirm(username, password,seat):
 def job():
     print("开始选座:", datetime.now())
     #comfirm("sghjgfd","dasdfhgf","10343") #输入账号，密码，座位 (10343)为二楼343的位置
-    comfirm("dasfdgfhj","wesdgtfh","wdesfdg") #输入账号，密码，座位
+    comfirm("dasfdgfhj","wesdgtfh","wdesfdg") #输入账号，密码，座位（账号：学号，密码：姓名字母大写+学号）
 
 def run_scheduled_job():
     print("开始运行。")

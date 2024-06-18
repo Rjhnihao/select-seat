@@ -17,7 +17,7 @@ pip3 install datetime
 ```
 
 ## 安装google:
-现已提供ChromeDriver的版本:122.0.6261.128
+现已提供ChromeDriver的版本:126.0.6478.61
 ```shell
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i ./google-chrome-stable_current_amd64.deb
