@@ -38,16 +38,16 @@ chmod +x Makefile
 ```
 # 开始运行:
 ```shell
-make start1
+make start2
 ```
 这条命令会使得test.py在后台运行，nohup会将输出重定向到一个名为nohup.out的文件中。
-## 查看test.out文件
+## 查看test.log文件
 ```shell
-cat test.out
+cat test.log
 ```
 ## 终止当前目录下所有进程:
 ```shell
-make stop1
+make stop2
 ```
 # 自动预约图书馆的项目
 后续会更新位置的自定义
